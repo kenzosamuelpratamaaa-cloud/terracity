@@ -1,0 +1,12 @@
+name: TerraCity
+main: me.mcp.terracity.TerraCityPlugin
+version: 1.0.1
+api-version: "1.21"
+load: STARTUP
+commands:
+  terracity:
+    description: Create/manage TerraCity worlds
+    usage: /terracity
+permissions:
+  terracity.admin:
+    default: op

@@ -1,0 +1,85 @@
+# TerraCity - Paper/Spigot 1.21.1
+# Natural fantasy terrain + city grid (Ouranos-ish vibe, Iris-ish terrain)
+seed-salt: 1337
+
+terrain:
+  sea-level: 63
+  base-height: 70
+  height-amplitude: 72
+  terrain-scale: 0.0046
+  ridge-weight: 0.55
+  cliff-threshold: 0.78
+  snow-line: 150
+
+biomes:
+  temperature-scale: 0.0023
+  humidity-scale: 0.0020
+
+city:
+  enabled: true
+  region-size: 512
+  chance: 0.12
+  radius: 120
+  blend: 40
+  base-height-min: 80
+  road:
+    spacing: 32
+    width: 5
+    material: STONE_BRICKS
+    sidewalk: ANDESITE
+  plots:
+    size: 16
+    margin: 2
+  buildings:
+    max-per-chunk: 2
+    # Extra fallback placement probability per plot block (0.0012 ~ ~0-2 buildings per chunk)
+    random-chance: 0.0012
+    palette:
+      wall: SPRUCE_PLANKS
+      floor: OAK_PLANKS
+      roof: DARK_OAK_PLANKS
+      trim: STRIPPED_SPRUCE_LOG
+      window: GLASS
+      stone: STONE_BRICKS
+
+
+# Oceans / large seas
+ocean:
+  scale: 0.00085
+  threshold: 0.52
+  depth: 28
+
+
+# Rivers (smooth & connected)
+rivers:
+  scale: 0.0021
+  warp-scale: 0.0009
+  width: 0.10
+  depth: 10
+
+
+# Volcanoes (rare)
+volcano:
+  region-size: 1536
+  chance: 0.08
+  radius: 220
+  height: 110
+  crater-radius: 28
+  lava-level: 81
+
+
+# Custom flora / trees
+flora:
+  attempts-per-chunk: 4
+  palm:
+    chance: 0.45
+  pine:
+    chance: 0.30
+  jungle:
+    chance: 0.25
+
+trees:
+  enabled: true
+  attempts-per-chunk: 10
+  min-y: -64
+  max-y: 320
